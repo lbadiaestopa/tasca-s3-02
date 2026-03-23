@@ -29,7 +29,7 @@ class Turkey
 
 class TurkeyAdapter implements DuckInterface
 {
-    protected $turkey;
+    private Turkey $turkey;
 
     public function __construct(Turkey $turkey)
     {
