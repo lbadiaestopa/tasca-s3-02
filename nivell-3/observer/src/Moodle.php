@@ -16,6 +16,11 @@ class Moodle implements SubjectInterface
         $this->observers = array_filter($this->observers, fn($o) => $o !== $observer);
     }
 
+    public function addSubmission(Submission $submission): void
+    {
+        $this->notify($submission);
+    }
+
     public function notify(Submission $submission): void
     {
         foreach ($this->observers as $observer) {
