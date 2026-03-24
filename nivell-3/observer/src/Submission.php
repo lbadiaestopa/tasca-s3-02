@@ -20,9 +20,4 @@ class Submission
     {
         return $this->studentName;
     }
-
-    public function __toString(): string
-    {
-        return "$this->taskName , $this->studentName";
-    }
 }
