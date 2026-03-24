@@ -11,4 +11,4 @@ $mentor = new Mentor('Rubén');
 $submission = new Submission('Tasca-s3-02', 'Lluc');
 
 $moodle->attach($mentor);
-$moodle->notify($submission);
+$moodle->addSubmission($submission);
