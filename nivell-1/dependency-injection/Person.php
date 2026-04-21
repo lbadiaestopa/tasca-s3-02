@@ -6,6 +6,19 @@ class Person
 
     public function __construct(array $objects)
     {
+        foreach ($objects as $object) {
+            if (
+                !$object instanceof Wallet &&
+                !$object instanceof Key &&
+                !$object instanceof PublicTransportCard &&
+                !$object instanceof Smartphone
+            ) {
+                throw new InvalidArgumentException(
+                    "Invalid object in Person"
+                );
+            }
+        }
+
         $this->objects = $objects;
     }
 
