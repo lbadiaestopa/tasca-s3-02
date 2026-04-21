@@ -18,7 +18,7 @@ function areEquals(Tigger $tigger, Tigger $tigger2)
 areEquals($tigger, $tigger2);
 
 $tigger->roar();
-$tigger->roar();
+$tigger2->roar();
 $tigger->roar();
 
 echo Tigger::getCounter();
