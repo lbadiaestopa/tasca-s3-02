@@ -10,6 +10,8 @@ class Tigger
         echo "Building character..." . PHP_EOL;
     }
 
+    private function __clone() {}
+
     public function roar(): void
     {
         echo "Grrr!" . PHP_EOL;
