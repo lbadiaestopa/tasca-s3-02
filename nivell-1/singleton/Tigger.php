@@ -3,20 +3,20 @@
 class Tigger
 {
     private static Tigger $instance;
-    public static int $counter = 0;
+    private static int $counter = 0;
 
     private function __construct()
     {
         echo "Building character..." . PHP_EOL;
     }
 
-    public function roar()
+    public function roar(): void
     {
         echo "Grrr!" . PHP_EOL;
         self::$counter++;
     }
 
-    public static function getInstance()
+    public static function getInstance(): Tigger
     {
         if (!isset(self::$instance)) {
             self::$instance = new Tigger;
