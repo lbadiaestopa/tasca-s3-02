@@ -24,10 +24,6 @@ class Person
 
     public function checkObjects(): void
     {
-        echo 'I have my ';
-        foreach ($this->objects as $object) {
-            echo $object . ', ';
-        }
-        echo "ready to go!";
+        echo 'I have my ' . implode(', ', $this->objects) . '. Ready to go!';
     }
 }
