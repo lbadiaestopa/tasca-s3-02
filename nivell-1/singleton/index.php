@@ -15,7 +15,7 @@ function areEquals(Tigger $tigger, Tigger $tigger2)
 
 }
 
-$areEquals = areEquals($tigger, $tigger2);
+areEquals($tigger, $tigger2);
 
 $tigger->roar();
 $tigger->roar();
